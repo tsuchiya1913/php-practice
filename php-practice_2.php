@@ -1,5 +1,5 @@
 <?php
-// Q1 tic-tac問題
+// Q1 tic-tac問題　！
 $numbers =[];
 for ($i = 1; $i <= 100 ; $i++) {
     switch ($i) {
@@ -19,6 +19,7 @@ for ($i = 1; $i <= 100 ; $i++) {
             echo $i . "\n";
     };
 };
+//
 
 // Q2 多次元連想配列
 $personalInfos = [
@@ -55,8 +56,8 @@ foreach ($ageList as $index => $age){
 };
 var_dump($personalInfos);
 
-// Q3 オブジェクト-1
-// Q4 オブジェクト-2
+// Q3 オブジェクト-1　！
+// Q4 オブジェクト-2　！
 
 class Student
 {
@@ -78,18 +79,27 @@ class Student
 }
 $bob = new Student(120 , 'bob');
 //echo $bob->studentId;
+//$bobに格納されているデータとデータ型について調べる　宿題　各メソッドの返り値も調べる
+
 echo '学籍番号' . $bob->studentId . '番の生徒は' . $bob->studentName . 'です。';
+//$bob->studentId　属性について
 $yamada = new Student(120, '山田');
 $yamada->attend('PHP');
+//関数とメソッドの違い　最低使用条件についてを調べる
+//クラスの外で定義されるものが「関数」、**クラスの中で定義されるものが「メソッド」
 
-// Q5 定義済みクラス
+
+// Q5 定義済みクラス　！
 //q1
 $time = new DateTime('2021-02-02');
 echo $time->format('Y-m-d');
+//$timeに格納されているデータとデータ型を調べる
+//今日から一ヶ月前の日付を表示させる
 
 //q2
 $time1 = new DateTime('1992-04-25');
 $time2 = new DateTime('2025-09-14');
 $diff = $time1->diff($time2);
 echo 'あの日から' . $diff->format('%a') . '日が経ちました。';
+//$diffに格納されているデータとデータ型を調べる
 ?>
